@@ -14,7 +14,12 @@ Gem::Specification.new do |s|
   s.summary       = 'Ruby integrations for Elasticsearch'
   s.homepage      = 'http://github.com/elasticsearch/elasticsearch-ruby'
   s.license       = 'Apache-2.0'
-
+  s.metadata = {
+    'homepage_uri' => 'https://github.com/elastic/elasticsearch-ruby',
+    'changelog_uri' => 'https://github.com/elastic/elasticsearch-ruby/blob/7.x/CHANGELOG.md',
+    'source_code_uri' => 'https://github.com/elastic/elasticsearch-ruby/tree/7.x',
+    'bug_tracker_uri' => 'https://github.com/elastic/elasticsearch-ruby/issues'
+  }
   s.files         = `git ls-files`.split($/)
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.executables   << 'elastic_ruby_console'
