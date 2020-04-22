@@ -1,0 +1,16 @@
+[source, ruby]
+----
+client.search(
+    body: {
+    query: {
+      terms: {
+        user: [
+          "kimchy",
+          "elasticsearch"
+        ],
+        boost:  1
+      }
+    }
+  }
+)
+----

@@ -1,0 +1,14 @@
+[source, ruby]
+----
+client.reindex(
+    body: {
+    source: {
+      index:  "source"
+    },
+    dest: {
+      index:  "dest",
+      pipeline:  "some_ingest_pipeline"
+    }
+  }
+)
+----

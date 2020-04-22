@@ -1,4 +1,8 @@
 [source, ruby]
 ----
-response = client.get(index: 'twitter', id: 0, _source: false)
+client.get(
+  index: 'twitter',
+  id: 0,
+  _source: 'false'
+)
 ----

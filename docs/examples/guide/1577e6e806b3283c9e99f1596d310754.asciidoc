@@ -1,0 +1,12 @@
+[source, ruby]
+----
+client.index(
+  index: 'test',
+  id: 1,
+  refresh: 'true',
+  body: {
+    text:  "words words",
+    flag:  "foo"
+  }
+)
+----

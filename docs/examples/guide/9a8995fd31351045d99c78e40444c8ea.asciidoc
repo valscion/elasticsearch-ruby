@@ -1,10 +1,12 @@
 [source, ruby]
 ----
 client.search(
-  body: {
+    body: {
     aggregations: {
       genres: {
-        terms: { field: "genre" }
+        terms: {
+          field:  "genre"
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 [source, ruby]
 ----
 client.search(
-  body: {
+    body: {
     query: {
       match: {
         message: {
-          query: "to be or not to be",
-          operator: "and",
-          zero_terms_query: "all"
+          query:  "to be or not to be",
+          operator:  "and",
+          zero_terms_query:  "all"
         }
       }
     }

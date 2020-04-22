@@ -1,0 +1,15 @@
+[source, ruby]
+----
+client.search(
+    body: {
+    query: {
+      term: {
+        user: {
+          value:  "Kimchy",
+          boost:  1
+        }
+      }
+    }
+  }
+)
+----

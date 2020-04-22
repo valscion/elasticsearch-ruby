@@ -1,0 +1,14 @@
+[source, ruby]
+----
+client.reindex(
+    body: {
+    max_docs:  1,
+    source: {
+      index:  "twitter"
+    },
+    dest: {
+      index:  "new_twitter"
+    }
+  }
+)
+----

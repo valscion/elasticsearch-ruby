@@ -1,0 +1,5 @@
+[source, ruby]
+----
+client.indices.refresh(
+)
+----

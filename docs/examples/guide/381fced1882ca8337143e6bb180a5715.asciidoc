@@ -1,0 +1,13 @@
+[source, ruby]
+----
+client.index(
+  index: 'test',
+  id: 1,
+  body: {
+    counter:  1,
+    tags: [
+      "red"
+    ]
+  }
+)
+----

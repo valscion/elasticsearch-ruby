@@ -1,13 +1,13 @@
 [source, ruby]
 ----
 client.search(
-  body: {
+    body: {
     aggregations: {
       tags: {
         terms: {
-          field: "tags",
-          include: ".*sport.*",
-          exclude: "water_.*"
+          field:  "tags",
+          include:  ".*sport.*",
+          exclude:  "water_.*"
         }
       }
     }

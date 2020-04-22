@@ -1,0 +1,19 @@
+[source, ruby]
+----
+client.delete_by_query(
+  index: 'twitter',
+  body: {
+    slice: {
+      id:  0,
+      max:  2
+    },
+    query: {
+      range: {
+        likes: {
+          lt:  10
+        }
+      }
+    }
+  }
+)
+----

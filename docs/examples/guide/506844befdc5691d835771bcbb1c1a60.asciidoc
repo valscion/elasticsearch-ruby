@@ -3,8 +3,14 @@
 client.search(
   index: 'bank',
   body: {
-    query: { match_all: {} },
-    sort: { account_number: 'asc' }
+    query: {
+      match_all: {
+      }
+    },
+    sort: [ {
+        account_number:  "asc"
+      }
+    ]
   }
 )
 ----

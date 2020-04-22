@@ -1,0 +1,13 @@
+[source, ruby]
+----
+client.delete_by_query(
+  index: 'twitter',
+  conflicts: 'proceed',
+  body: {
+    query: {
+      match_all: {
+      }
+    }
+  }
+)
+----

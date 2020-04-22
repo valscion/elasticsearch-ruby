@@ -1,0 +1,18 @@
+[source, ruby]
+----
+client.reindex(
+    body: {
+    source: {
+      index:  "twitter",
+      query: {
+        term: {
+          user:  "kimchy"
+        }
+      }
+    },
+    dest: {
+      index:  "new_twitter"
+    }
+  }
+)
+----

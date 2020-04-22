@@ -1,0 +1,15 @@
+[source, ruby]
+----
+client.indices.create(
+  index: 'my_index',
+  body: {
+    mappings: {
+      properties: {
+        user_identifier: {
+          type:  "keyword"
+        }
+      }
+    }
+  }
+)
+----

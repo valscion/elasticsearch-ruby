@@ -1,12 +1,12 @@
 [source, ruby]
 ----
 client.search(
-  body: {
+    body: {
     aggregations: {
       tags: {
         terms: {
-          field: "tags",
-          missing: "N/A"
+          field:  "tags",
+          missing:  "N/A"
         }
       }
     }

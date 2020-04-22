@@ -1,0 +1,12 @@
+[source, ruby]
+----
+client.search(
+    body: {
+    query: {
+      exists: {
+        field:  "user"
+      }
+    }
+  }
+)
+----

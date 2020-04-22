@@ -1,0 +1,13 @@
+[source, ruby]
+----
+client.index(
+  index: 'my_index',
+  id: 1,
+  body: {
+    color: [
+      "blue",
+      "green"
+    ]
+  }
+)
+----

@@ -1,4 +1,6 @@
 [source, ruby]
 ----
-client.cat.health(v: true)
+client.cat.health(
+  v: 'true'
+)
 ----

@@ -1,0 +1,6 @@
+[source, ruby]
+----
+client.indices.get_mapping(
+  index: 'my_index'
+)
+----

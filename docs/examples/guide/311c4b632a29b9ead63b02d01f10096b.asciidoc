@@ -1,4 +1,10 @@
 [source, ruby]
 ----
-client.index(index: 'customer', id: '1', body: {name: 'John Doe'})
+client.index(
+  index: 'customer',
+  id: 1,
+  body: {
+    name:  "John Doe"
+  }
+)
 ----

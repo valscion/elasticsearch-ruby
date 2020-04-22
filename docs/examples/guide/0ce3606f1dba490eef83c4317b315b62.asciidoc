@@ -1,0 +1,13 @@
+[source, ruby]
+----
+client.search(
+  index: 'twitter',
+  body: {
+    query: {
+      term: {
+        user:  "kimchy"
+      }
+    }
+  }
+)
+----

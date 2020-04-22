@@ -1,0 +1,18 @@
+[source, ruby]
+----
+client.search(
+    body: {
+    query: {
+      multi_match: {
+        query:  "Will Smith",
+        type:  "best_fields",
+        fields: [
+          "first_name",
+          "last_name"
+        ],
+        operator:  "and"
+      }
+    }
+  }
+)
+----

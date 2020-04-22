@@ -1,0 +1,7 @@
+[source, ruby]
+----
+client.indices.get_template(
+  name: 'template_1',
+  filter_path: '*.version'
+)
+----

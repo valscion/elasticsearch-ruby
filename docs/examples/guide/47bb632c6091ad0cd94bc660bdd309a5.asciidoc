@@ -5,11 +5,17 @@ client.search(
   body: {
     query: {
       bool: {
-        must: [
-          { match: { age: "40" } }
+        must: [ {
+            match: {
+              age:  "40"
+            }
+          }
         ],
-        must_not: [
-          { match: { state: "ID" } }
+        must_not: [ {
+            match: {
+              state:  "ID"
+            }
+          }
         ]
       }
     }

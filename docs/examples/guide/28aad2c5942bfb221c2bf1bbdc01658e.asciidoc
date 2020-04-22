@@ -1,0 +1,15 @@
+[source, ruby]
+----
+client.search(
+    body: {
+    query: {
+      query_string: {
+        fields: [
+          "city.*"
+        ],
+        query:  "this AND that OR thus"
+      }
+    }
+  }
+)
+----

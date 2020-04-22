@@ -1,0 +1,13 @@
+[source, ruby]
+----
+client.reindex(
+    body: {
+    source: {
+      index:  "users"
+    },
+    dest: {
+      index:  "new_users"
+    }
+  }
+)
+----

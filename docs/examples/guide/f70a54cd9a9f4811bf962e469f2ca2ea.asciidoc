@@ -1,11 +1,13 @@
 [source, ruby]
 ----
 client.search(
-  body: {
+    body: {
     query: {
       bool: {
         filter: {
-          term: { status: "active" }
+          term: {
+            status:  "active"
+          }
         }
       }
     }

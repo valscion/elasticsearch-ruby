@@ -1,0 +1,7 @@
+[source, ruby]
+----
+client.get(
+  index: 'test2',
+  id: 1
+)
+----

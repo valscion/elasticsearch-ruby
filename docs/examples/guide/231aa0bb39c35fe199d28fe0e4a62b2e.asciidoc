@@ -4,7 +4,9 @@ client.search(
   index: 'bank',
   body: {
     query: {
-      match_phrase: { address: "mill lane" }
+      match_phrase: {
+        address:  "mill lane"
+      }
     }
   }
 )

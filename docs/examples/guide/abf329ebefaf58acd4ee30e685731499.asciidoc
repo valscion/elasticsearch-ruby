@@ -1,0 +1,15 @@
+[source, ruby]
+----
+client.indices.create(
+  index: 'index_double',
+  body: {
+    mappings: {
+      properties: {
+        field: {
+          type:  "double"
+        }
+      }
+    }
+  }
+)
+----

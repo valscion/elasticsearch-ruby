@@ -1,0 +1,7 @@
+[source, ruby]
+----
+client.tasks.list(
+  detailed: 'true',
+  actions: '*/delete/byquery'
+)
+----

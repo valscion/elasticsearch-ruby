@@ -5,12 +5,15 @@ client.search(
   body: {
     query: {
       bool: {
-        must: { match_all: {} },
+        must: {
+          match_all: {
+          }
+        },
         filter: {
           range: {
             balance: {
-              gte: 20000,
-              lte: 30000
+              gte:  20000,
+              lte:  30000
             }
           }
         }

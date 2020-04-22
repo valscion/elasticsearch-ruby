@@ -1,0 +1,19 @@
+[source, ruby]
+----
+client.reindex(
+    body: {
+    source: {
+      index:  "source",
+      query: {
+        match: {
+          company:  "cat"
+        }
+      }
+    },
+    dest: {
+      index:  "dest",
+      routing:  "=cat"
+    }
+  }
+)
+----
